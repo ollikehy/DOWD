@@ -6,7 +6,6 @@
 /ml-kurkkumopo-frontend
 /ml-kurkkumopo-backend
 /ml-kurkkumopo-training
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
 /node_modules
