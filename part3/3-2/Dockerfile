@@ -7,8 +7,11 @@ RUN apt-get update && \
     cd /usr/local/bin &&\
     ln -s /usr/bin/python3 python && \
     pip3 install --upgrade pip yle-dl pycryptodome && \
-    rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/* && \
+    useradd -m app &&\
+    chown app /app
 
+USER app
 
 WORKDIR /app
 

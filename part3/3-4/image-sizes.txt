@@ -1,0 +1,6 @@
+Backend: 262MB
+Backend from node: 962MB
+Backend from node-alpine: 164MB
+Frontend: 429MB
+Frontend from node: 1.07GB
+Frontend from node-alpine: 270MB
