@@ -12,6 +12,10 @@ RUN apt-get update && apt-get -y install curl && \
     npm run build && \
     npm install -g serve && \
     apt-get purge -y --auto-remove curl && \
-    rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/* &&\
+    useradd -m app &&\
+    chown app /example
+
+USER app
 
 CMD ["serve", "-s", "-l", "5000", "dist"]
