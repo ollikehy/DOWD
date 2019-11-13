@@ -1,0 +1,2 @@
+Backend size: 349MB -> 262MB
+Frontend size: 998MB -> 429MB
